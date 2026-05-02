@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Cabeçalho*/
+header {
+    background-image: linear-gradient(to top, #1A5C38, #3AD07E);
+    height: 250px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+header > p {
+    font-size: 19px;
+    color: #73d89f;
+    text-align: center;
+}
+
+/*Barra de Navegação*/
+nav {
+    display: flex;
+    margin-top: 69px;
+    
+}
+
+/*Ajuste dos Links*/
+nav > a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #b3f7d1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Animação do Link*/
+nav > a:hover {
+    background-color: #1A5C38;
+    color: #0b7e41;
+}
+
+/*Configuração do Corpo*/
+body {
+    background-color: #84E1AD;
+}
+
+/*Configuração do Conteúdo*/
+main {
+    background-color: white;
+    width: 1125px;
+    height: 2035;
+    margin: auto;
+    padding: 25px;
+    
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*Titulos do Main*/
+.title-text-p {
+    font-size: 40px;
+    font-family: 'android';
+    margin-bottom: 20px;
+    color: #21623F;
+}
+
+.title-text {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'android';
+    margin-bottom: 20px;
+    color: #21623F;
+    background-image: linear-gradient(to right, #C3E7D3, white);
+    padding: 4px;
+    
+}
+
+/*Espaçamento das sessões*/
+section {
+    padding: 10px;
+}
+
+/*Configuração dos Textos*/
+article {
+    padding: 10px;
+    text-indent: 10px;
+}
+
+/*Config do Links*/
+a {
+    color: #254734;
+    text-decoration: none;
+}
+
+/*Config do Destaque*/
+strong {
+    color: #254734;
+}
+
+.image-block {
+    display: flex;
+    justify-content: center;
+}
+
+.video-box {
+    background-color: #1A5C38;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.extra-box {
+    background-color: #C5EBD6;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 15px 15px;
+    text-align: justify;
+    box-shadow: 2px 2px 8px #25473477;
+}
+
+.mini-title {
+    background-color: #2FA866;
+    padding: 10px;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 2px 2px 8px #25473477;
+}
+
+.list-block {
+    display: inline-block;
+    justify-content: center;
+    padding: 15px;
+}
+
+.list-a {
+    margin-right: 219px;
+}
+
+footer {
+    background-color: #1A5C38;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    color: #73d89f;
+}
+
+footer > strong {
+    color: white;
+}

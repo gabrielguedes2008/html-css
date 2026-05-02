@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos em CSS</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(255, 136, 136);
+        }
+
+        a::after {
+            content: ' [link]';
+            color: lightgray;
+            text-decoration: none;
+        }
+
+        a::before {
+            content: '﹥ ';
+        }
+
+        .especial::after {
+            content: '﹤';
+            color: red;
+        }
+
+        .especial::before {
+            content: '﹥';
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank">Repositorio do GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+    <h1>Ola, Mundo</h1>
+</body>
+</html>

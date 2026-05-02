@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+body {
+    background-color: rgb(85, 85, 214);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(11, 11, 66);
+}
+
+h1#tit {
+    text-align: center;
+    color: rgb(180, 160, 255);
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.basico {
+    color: rgb(1, 73, 1);
+}
+
+.mediano {
+    color: rgb(95, 95, 0);
+}
+
+.avancado {
+    color: rgb(97, 1, 1);
+}

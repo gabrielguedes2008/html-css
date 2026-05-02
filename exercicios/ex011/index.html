@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam</h1>
+    <p>Teste as imagens a baixo em dispositivos de tamanhos diferentes para ver como elas se adaptam</p>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-g.png" alt="">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Logo abaixo estaram três musicas</p>
+    <audio src="media/money-money.MP3" controls></audio> <!--maneira mais simples de colocar um audio-->
+    <br>
+    <audio src="media/restart-levo-comigo.MP3" controls></audio>
+    <br>
+    <audio controls preload="metadata"> <!--esse é o melhor jeito, no caso vc terá q ter varios tipos pra caso algum não funcione o outro será reproduzido-->
+        <source src="media/monolith.MP3" type="audio/mpeg">
+        <source src="media/monolith.ogg" type="audio/ogg">
+        <source src="media/monolith.wav" type="audio/wav">
+        <p>Sua musica infelizmente não pode ser carregada</p>
+        <a href="media/monolith.MP3">Clique aqui para baixar sua musica</a>
+    </audio>
+</body>
+</html>

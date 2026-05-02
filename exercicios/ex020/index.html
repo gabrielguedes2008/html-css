@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            display: inline-block;
+        }
+        /*Configura o Estado de Algo*/
+        div:hover {
+            background-color: black;
+            color: white;
+        }
+        /*Configura o filho da Div, que no caso é o p*/
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>Bloco 1</div>
+    <div>Bloco 2</div>
+    <div>Bloco 3</div>
+
+    <div>
+        Passe o Mouse
+        <p>Texto Escondido</p>
+    </div>
+</body>
+</html>
